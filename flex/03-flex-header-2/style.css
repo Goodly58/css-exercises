@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image {
@@ -27,6 +31,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin-left: 16px
 }
 
 button {
@@ -37,6 +42,17 @@ button {
   padding: 8px 24px;
 }
 
+.links {
+  gap: 16px;
+  padding: 0px;
+  margin-left: 16px;
+}
+
+.notifications,
+.profile-image {
+  justify-content: flex-end;
+}
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
@@ -45,4 +61,16 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
 }

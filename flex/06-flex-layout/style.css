@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
@@ -24,4 +24,65 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Goodly's code: */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul,
+.footer ul {
+  gap: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+#last {
+  margin-right: 20px;
+}
+
+#first {
+  margin-left: -20px;
+}
+
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.buttons button {
+  padding: 10px;
+}
+
+.footer {
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-top: 11.5vh;
+}
+
+.footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+a:link {
+  color: grey;
+  text-decoration: none;
 }
